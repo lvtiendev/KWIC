@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class Input {
 	private Storage storage;
@@ -7,5 +8,8 @@ public class Input {
 	}
 	
 	public void getInput() {
+		System.out.println("Please enter lines:");
+		Scanner sc = new Scanner(System.in);
+		
 	}
 }

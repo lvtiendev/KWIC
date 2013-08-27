@@ -32,4 +32,8 @@ public class Storage {
 	public int numberOfIgnoredWords() {
 		return ignoredWords.size();
 	}
+	
+	public boolean isIgnoredWord(String word) {
+		return ignoredWords.contains(word);
+	}
 }
