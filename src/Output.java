@@ -5,6 +5,7 @@ public class Output {
 		this.alphabetizer = alphabetizer;
 	}
 	
+	// Uppercase the first character in the string
 	private String format(String line) {
 		char firstChar = line.charAt(0);
 		StringBuilder newLine = new StringBuilder(line);
@@ -18,5 +19,6 @@ public class Output {
 			String line = alphabetizer.getIndexedLineAtIndex(i);
 			System.out.println(format(line));
 		}
+		System.out.println("Total: " + alphabetizer.length() + " results");
 	}
 }

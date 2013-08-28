@@ -4,8 +4,8 @@ public class MasterControl {
 		Storage storage = new Storage();
 		Input input = new Input(storage);
 		input.getInput();
-		CircularShifter shifter = new CircularShifter(storage);
-		shifter.setup();
+		CircularShifter shifter = new CircularShifter();
+		shifter.setup(storage);
 		Alphabetizer alphabetizer = new Alphabetizer(shifter);
 		alphabetizer.sort();
 		Output output = new Output(alphabetizer);
