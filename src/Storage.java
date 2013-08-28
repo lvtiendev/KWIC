@@ -34,6 +34,11 @@ public class Storage {
 	}
 	
 	public boolean isIgnoredWord(String word) {
-		return ignoredWords.contains(word);
+		for (int i = 0; i < ignoredWords.size(); i++) {
+			if (ignoredWords.get(i).equalsIgnoreCase(word)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
