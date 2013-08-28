@@ -8,5 +8,7 @@ public class MasterControl {
 		shifter.setup();
 		Alphabetizer alphabetizer = new Alphabetizer(shifter);
 		alphabetizer.sort();
+		Output output = new Output(alphabetizer);
+		output.printOutput();
 	}
 }
