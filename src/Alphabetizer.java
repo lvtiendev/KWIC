@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Alphabetizer {
-	CircularShifter shifter;
+public class Alphabetizer implements Sorter {
+	Shifter shifter;
 	ArrayList<String> indexedLines;
-	public Alphabetizer(CircularShifter shifter) {
+	public Alphabetizer(Shifter shifter) {
 		this.shifter = shifter;
 		indexedLines = new ArrayList<String>();
 	}

@@ -1,8 +1,8 @@
 public class Output {
-	private Alphabetizer alphabetizer;
+	private Sorter sorter;
 
-	public Output(Alphabetizer alphabetizer) {
-		this.alphabetizer = alphabetizer;
+	public Output(Sorter sorter) {
+		this.sorter = sorter;
 	}
 	
 	// Uppercase the first character in the string
@@ -15,10 +15,10 @@ public class Output {
 
 	public void printOutput() {
 		System.out.println("Result:");
-		for (int i=0; i< alphabetizer.length(); i++) {
-			String line = alphabetizer.getIndexedLineAtIndex(i);
+		for (int i=0; i< sorter.length(); i++) {
+			String line = sorter.getIndexedLineAtIndex(i);
 			System.out.println(format(line));
 		}
-		System.out.println("Total: " + alphabetizer.length() + " results");
+		System.out.println("Total: " + sorter.length() + " results");
 	}
 }
